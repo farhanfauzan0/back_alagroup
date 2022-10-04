@@ -17,6 +17,7 @@ class FrontVisimisi extends Migration
             $table->id();
             $table->string('visi');
             $table->string('misi');
+            $table->string('type');
             $table->timestamps();
         });
     }

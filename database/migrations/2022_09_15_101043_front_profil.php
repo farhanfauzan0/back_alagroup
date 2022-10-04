@@ -15,6 +15,13 @@ class FrontProfil extends Migration
     {
         Schema::create('front_profil', function (Blueprint $table) {
             $table->id();
+            $table->string('nama');
+            $table->string('alamat');
+            $table->string('no_telp');
+            $table->string('email');
+            $table->longText('desc');
+            $table->string('foto');
+            $table->string('type');
             $table->timestamps();
         });
     }

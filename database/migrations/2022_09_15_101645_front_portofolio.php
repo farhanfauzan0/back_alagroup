@@ -15,6 +15,10 @@ class FrontPortofolio extends Migration
     {
         Schema::create('front_portofolio', function (Blueprint $table) {
             $table->id();
+            $table->string('nama');
+            $table->longText('desc');
+            $table->string('foto');
+            $table->string('type');
             $table->timestamps();
         });
     }

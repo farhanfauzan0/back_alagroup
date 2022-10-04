@@ -15,6 +15,9 @@ class FrontProduk extends Migration
     {
         Schema::create('front_produk', function (Blueprint $table) {
             $table->id();
+            $table->string('nama');
+            $table->string('foto');
+            $table->string('type');
             $table->timestamps();
         });
     }
